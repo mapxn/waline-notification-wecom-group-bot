@@ -1,11 +1,14 @@
 {
   "name": "waline-notification-wecom-group-bot",
-  "version": "1.0.2",
-  "description": "Notification for Wecom group bot",
+  "version": "1.0.4",
+  "description": "A Waline notification plugin that sends alerts via Wecom group bot",
   "keywords": [
     "waline",
     "notification",
-    "blog"
+    "blog",
+    "plugin",
+    "wecom",
+    "wechat"
   ],
   "homepage": "https://github.com/wnwd/waline-notification-wecom-group-bot#readme",
   "bugs": {

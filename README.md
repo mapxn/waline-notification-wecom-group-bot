@@ -1,6 +1,6 @@
 # waline-notification-wecom-group-bot
 
-A Waline plugin that provide wecome group bot notification spport.
+A [**Waline**](https://waline.js.org/) plugin that provide [**wecome group bot**](https://developer.work.weixin.qq.com/document/path/91770) notification spport.
 
 [中文文档](./README_CN.md) | English Doc
 
@@ -10,10 +10,9 @@ npm install waline-notification-wecom-group-bot
 ```
 
 ## How to use
-
 Edit your Waline File:
 
-indes.js
+index.js
 ```js
 const Application = require('@waline/vercel');
 const WecomGroupBot = require('waline-notification-wecom-group-bot');
@@ -37,5 +36,13 @@ Add "waline-notification-wecom-group-bot": "latest" into package.json dependenci
 - `SITE_URL`: Your site URL, used for display in notification message.
 - `WECOM_TEMPLATE`: (optional) Your custom notification template, please refer [this document](https://waline.js.org/en/guide/features/notification.html#notification-template).
 
+The default template is as follow:
+```shell
+{{site.name|safe}}有新评论啦
+【昵称】：{{self.nick}}
+【邮箱】：{{self.mail}}
+【内容】：{{self.comment}}
+【地址】：{{site.postUrl}}
+```
 
 You need **redeploy** after change environment variables.
